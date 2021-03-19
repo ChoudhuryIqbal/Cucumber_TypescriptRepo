@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "tsc && node_modules/.bin/webdriver-manager update",
+    "test": "node_modules/.bin/protractor JSFiles/configuration/conf.js"
   },
   "author": "Choudhury Iqbal",
   "license": "ISC",
